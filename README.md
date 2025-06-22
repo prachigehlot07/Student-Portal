@@ -1,3 +1,77 @@
+# 🎓 Student Portal
+
+A modern, responsive student portal built using **React (Hooks)**, **React Router v6**, **Tailwind CSS**, and **Axios**. Includes core features like authentication, protected routes, user dashboard, and dynamic user pages.
+
+---
+
+## 🚀 Features
+
+- 🔐 **User Authentication** (login/logout)
+- 📌 **Sticky Navbar**
+- 🏠 **Home Page**
+- 📊 **Dashboard (Protected)**
+- 👥 **Users Page (Public or Admin-only)**
+- 🚪 **Logout Functionality**
+- ⚡ **Axios for API Requests**
+- 🌈 **Fully Responsive UI with Tailwind CSS**
+
+---
+
+## 🧱 Tech Stack
+
+| Tech            | Purpose                           |
+|-----------------|-----------------------------------|
+| React (Hooks)   | UI Logic & State Management       |
+| React Router v6 | Routing & Protected Routes        |
+| Tailwind CSS    | Styling & Layouts                 |
+| Axios           | API Requests                      |
+| JSONPlaceholder | Mock API for Users Page           |
+| Context API     | Global Auth State Management      |
+
+---
+
+## 🗂 Folder Structure
+
+```
+
+student-portal/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   └── ProtectedRoute.jsx
+│   ├── context/
+│   │   └── AuthContext.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Login.jsx
+│   │   ├── Dashboard.jsx
+│   │   └── Users.jsx
+│   ├── App.jsx
+│   └── main.jsx
+├── tailwind.config.js
+└── README.md
+
+````
+---
+
+## 🧠 Future Enhancements
+
+* ✅ Role-based access (Admin/Student)
+* ✅ Real token-based authentication (JWT)
+* ✅ Backend integration (Express or Firebase)
+* ✅ Dark mode toggle (you know you want it)
+* ✅ Toast notifications (login/logout/errors)
+
+---
+
+## 👩‍💻 Author
+
+Built by [Prachi](https://github.com/707bestboy)
+
+---
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
