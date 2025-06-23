@@ -55,7 +55,7 @@ function Login({ login }) {
           </button>
         </form>
         <p className="text-center mt-4 text-sm">
-          Don't have an account? <a href="/signup" className="underline hover:text-pink-400">Sign up</a>
+          Don't have an account? <a href="/Signup" className="underline hover:text-pink-400">Sign up</a>
         </p>
       </div>
     </div>

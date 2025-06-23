@@ -59,7 +59,7 @@ function Signup() {
           </button>
         </form>
         <p className="text-center mt-4 text-sm">
-          Already have an account? <a href="/login" className="underline hover:text-pink-400">Log in</a>
+          Already have an account? <a href="/Login" className="underline hover:text-pink-400">Log in</a>
         </p>
       </div>
     </div>
