@@ -19,14 +19,10 @@ A modern, responsive student portal built using **React (Hooks)**, **React Route
 
 ## 🧱 Tech Stack
 
-| Tech            | Purpose                           |
-|-----------------|-----------------------------------|
-| React (Hooks)   | UI Logic & State Management       |
-| React Router v6 | Routing & Protected Routes        |
-| Tailwind CSS    | Styling & Layouts                 |
-| Axios           | API Requests                      |
-| JSONPlaceholder | Mock API for Users Page           |
-| Context API     | Global Auth State Management      |
+- React (Hooks)   
+- React Router 
+- Tailwind CSS
+- fetch
 
 ---
 
