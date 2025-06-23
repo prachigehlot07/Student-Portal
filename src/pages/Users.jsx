@@ -22,31 +22,25 @@ function Users() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-3xl font-bold text-purple-800 mb-6">Users</h1>
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-purple-950 text-white p-6">
+      <h1 className="text-3xl font-bold text-purple-300 mb-6">Users</h1>
 
-      {loading && <p className="text-gray-600 text-lg">Loading users...</p>}
-      {error && <p className="text-red-600 text-lg">Error: {error}</p>}
+      {loading && <p className="text-purple-200 text-lg">Loading users...</p>}
+      {error && <p className="text-red-400 text-lg">Error: {error}</p>}
 
       {!loading && !error && (
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {users.map((user) => (
             <div
               key={user.id}
-              className="bg-white border border-purple-300 rounded-xl p-4 shadow-md hover:shadow-lg transition-all"
+              className="bg-white/10 border border-purple-500/30 text-purple-100 rounded-xl p-4 shadow-md hover:shadow-purple-600/50 transition-all backdrop-blur-sm"
             >
-              <h2 className="text-xl font-bold text-purple-700 mb-2">
+              <h2 className="text-xl font-bold text-purple-300 mb-2">
                 {user.name}
               </h2>
-              <p className="text-gray-700 text-sm">
-                📧 {user.email}
-              </p>
-              <p className="text-gray-700 text-sm">
-                📞 {user.phone}
-              </p>
-              <p className="text-gray-700 text-sm">
-                🌐 {user.website}
-              </p>
+              <p className="text-purple-200 text-sm">📧 {user.email}</p>
+              <p className="text-purple-200 text-sm">📞 {user.phone}</p>
+              <p className="text-purple-200 text-sm">🌐 {user.website}</p>
             </div>
           ))}
         </div>

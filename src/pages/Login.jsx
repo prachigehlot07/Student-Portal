@@ -1,16 +1,22 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Login() {
+function Login({ login }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // 💬 This is where you’d handle form submission (API call etc.)
-    console.log("Logging in with", email, password);
-    navigate("/dashboard");
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (emailRegex.test(email)) {
+      login(); 
+      navigate("/dashboard");
+    } else {
+      alert("Please enter a valid email address.");
+    }
   };
 
   return (
@@ -28,6 +34,7 @@ function Login() {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
+            <p className="text-xs">*Must be "example@domain.com" format.</p>
           </div>
           <div>
             <label className="block mb-1 text-sm font-medium">Password</label>

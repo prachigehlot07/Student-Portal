@@ -1,14 +1,16 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSignup = (e) => {
     e.preventDefault();
-    // 🧪 Replace with API call when ready
     console.log("Signing up with:", email, username, password);
+    navigate("/Login");
   };
 
   return (

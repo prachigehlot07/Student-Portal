@@ -1,18 +1,18 @@
 # 🎓 Student Portal
 
-A modern, responsive student portal built using **React (Hooks)**, **React Router v6**, **Tailwind CSS**, and **Axios**. Includes core features like authentication, protected routes, user dashboard, and dynamic user pages.
+A modern, responsive student portal built using **React (Hooks)**, **React Router v6**, **Tailwind CSS**, and **fetch**. Includes core features like authentication, protected routes, user dashboard, and dynamic user pages.
 
 ---
 
 ## 🚀 Features
 
-- 🔐 **User Authentication** (login/logout)
+- 🔐 **User Authentication** (login/logout/signup)
 - 📌 **Sticky Navbar**
 - 🏠 **Home Page**
 - 📊 **Dashboard (Protected)**
-- 👥 **Users Page (Public or Admin-only)**
+- 👥 **Users Page**
 - 🚪 **Logout Functionality**
-- ⚡ **Axios for API Requests**
+- ⚡ **fetch for API Requests**
 - 🌈 **Fully Responsive UI with Tailwind CSS**
 
 ---
@@ -38,19 +38,25 @@ student-portal/
 ├── public/
 ├── src/
 │   ├── assets/
+│   │   └── Logo.png
 │   ├── components/
 │   │   ├── Navbar.jsx
-│   │   └── ProtectedRoute.jsx
-│   ├── context/
-│   │   └── AuthContext.jsx
+│   │   ├── Card.jsx
+│   │   ├── Header.jsx
+│   │   ├── Sidebar.jsx
+│   │   └── Table.jsx
 │   ├── pages/
 │   │   ├── Home.jsx
 │   │   ├── Login.jsx
+│   │   ├── Signup.jsx
 │   │   ├── Dashboard.jsx
+│   │   ├── about.jsx
+│   │   ├── contact.jsx
 │   │   └── Users.jsx
 │   ├── App.jsx
+│   ├── App.css
 │   └── main.jsx
-├── tailwind.config.js
+├── index.html 
 └── README.md
 
 ````
