@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Login({ login }) {
   const [email, setEmail] = useState("");
@@ -55,7 +56,7 @@ function Login({ login }) {
           </button>
         </form>
         <p className="text-center mt-4 text-sm">
-          Don't have an account? <a href="/Signup" className="underline hover:text-pink-400">Sign up</a>
+          Don't have an account? <Link to="/Signup" className="underline hover:text-pink-400">Sign up</Link>
         </p>
       </div>
     </div>
